@@ -31,15 +31,19 @@ body {
 
 #logo {
     display: flex;
-
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
     padding-left: 20px;
 
     color: white;
 
     transition: filter 0.25s;
+}
+.logo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }
 #logo img {
     max-height: 64px;
@@ -50,21 +54,22 @@ body {
 
 #nav-menu {
     display: flex;
-    flex-direction: row;
-    flex-grow: 1;
+    flex-direction: column;
+    flex-grow: 0.2;
 
     flex-wrap: wrap;
 
     align-items: stretch;
     justify-content: right;
+
+    background-color: var(--primary);
 }
 .nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 0px;
 
     gap: 10px;
 
@@ -83,6 +88,8 @@ body {
 }
 
 #content {
+    display: flex;
+    flex-direction: row;
     flex-grow: 1;
 }
 
@@ -100,17 +107,5 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    #header {
-        flex-direction: column;
-    }
-    #nav-menu {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .nav-item {
-        padding-top: 10px;
-        padding-bottom: 10px;
 
-        justify-content: left;
-    }
 }
