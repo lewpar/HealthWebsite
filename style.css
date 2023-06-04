@@ -17,7 +17,7 @@ body {
     flex-direction: column;
 }
 
-#nav-menu {
+#header {
     flex-basis: 100px;
     background-color: red;
 }
