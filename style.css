@@ -19,15 +19,48 @@ body {
 
 #header {
     flex-basis: 100px;
+    display: flex;
+}
+
+#logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+#logo img {
+    max-height: 64px;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    align-items: center;
+    justify-content: right;
+
+    background-color: yellow;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
     background-color: red;
+}
+.nav-item:hover {
+    background-color: green;
 }
 
 #content {
     flex-grow: 1;
-    background-color: green;
 }
 
 #footer {
     flex-basis: 50px;
-    background-color: blue;
 }
