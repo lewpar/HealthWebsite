@@ -4,6 +4,9 @@
 
     font-family: "Arial";
     text-decoration: none;
+
+    --primary: rgb(116, 193, 65);
+    --primary-highlight: rgb(131, 215, 74);
 }
 
 body {
@@ -21,7 +24,9 @@ body {
     flex-basis: 100px;
     display: flex;
 
-    border-bottom: 1px solid black;
+    background-color: var(--primary);
+
+    border-bottom: 1px solid var(--primary);
 }
 
 #logo {
@@ -29,6 +34,8 @@ body {
 
     align-items: center;
     justify-content: center;
+
+    padding: 10px;
 }
 #logo img {
     max-height: 64px;
@@ -55,16 +62,16 @@ body {
 
     transition: background-color 0.25s, color 0.25s;
 
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: var(--primary);
 }
 .nav-item:hover {
     color: white;
-    background-color: black;
+    background-color: var(--primary-highlight);
 }
 .nav-item.selected {
     color: white;
-    background-color: black;
+    background-color: var(--primary-highlight);
 }
 
 #content {
@@ -75,10 +82,13 @@ body {
     display: flex;
     flex-basis: 50px;
 
-    border-top: 1px solid black;
+    border-top: 1px solid var(--primary);
 
     justify-content: center;
     align-items: center;
+
+    color: white;
+    background-color: var(--primary);
 }
 
 @media screen and (max-width: 600px) {
