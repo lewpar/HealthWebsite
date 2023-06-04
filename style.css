@@ -62,6 +62,10 @@ body {
     color: white;
     background-color: black;
 }
+.nav-item.selected {
+    color: white;
+    background-color: black;
+}
 
 #content {
     flex-grow: 1;
