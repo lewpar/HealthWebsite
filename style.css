@@ -36,6 +36,8 @@ body {
     justify-content: center;
 
     padding: 10px;
+
+    color: white;
 }
 #logo img {
     max-height: 64px;
