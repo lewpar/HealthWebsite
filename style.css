@@ -53,6 +53,8 @@ body {
     flex-direction: row;
     flex-grow: 1;
 
+    flex-wrap: wrap;
+
     align-items: stretch;
     justify-content: right;
 }
