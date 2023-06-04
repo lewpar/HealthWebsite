@@ -20,6 +20,8 @@ body {
 #header {
     flex-basis: 100px;
     display: flex;
+
+    border-bottom: 1px solid black;
 }
 
 #logo {
@@ -39,8 +41,6 @@ body {
 
     align-items: center;
     justify-content: right;
-
-    background-color: yellow;
 }
 .nav-item {
     display: flex;
@@ -51,10 +51,14 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 
-    background-color: red;
+    transition: background-color 0.25s, color 0.25s;
+
+    color: white;
+    background-color: black;
 }
 .nav-item:hover {
-    background-color: green;
+    color: black;
+    background-color: white;
 }
 
 #content {
