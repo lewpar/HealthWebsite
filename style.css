@@ -20,51 +20,22 @@ body {
     flex-direction: column;
 }
 
-#header {
-    flex-basis: 100px;
-    display: flex;
-
-    background-color: var(--primary);
-
-    border-bottom: 1px solid var(--primary);
-}
-
-#logo {
+#sidebar {
     display: flex;
     flex-direction: column;
 
-    padding-left: 20px;
+    gap: 20px;
 
-    color: white;
-
-    transition: filter 0.25s;
-}
-.logo-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-}
-#logo img {
-    max-height: 64px;
-}
-#logo:hover {
-    filter: drop-shadow(0px 0px 10px white);
-}
-
-#nav-menu {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0.2;
-
-    flex-wrap: wrap;
-
-    align-items: stretch;
-    justify-content: right;
+    width: 20%;
 
     background-color: var(--primary);
 }
-.nav-item {
+
+#sidebar-menu {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-menu-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,11 +49,11 @@ body {
     color: white;
     background-color: var(--primary);
 }
-.nav-item:hover {
+.sidebar-menu-item:hover {
     color: white;
     background-color: var(--primary-highlight);
 }
-.nav-item.selected {
+.sidebar-menu-item.selected {
     color: white;
     background-color: var(--primary-highlight);
 }
@@ -90,7 +61,36 @@ body {
 #content {
     display: flex;
     flex-direction: row;
+
     flex-grow: 1;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+    transition: filter 0.25s;
+}
+.logo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#logo img {
+    max-height: 64px;
+}
+#logo:hover {
+    filter: drop-shadow(0px 0px 10px white);
 }
 
 #footer {
@@ -107,13 +107,4 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    #content {
-        flex-direction: column;
-    }
-    #nav-menu {
-        flex-grow: 0;
-    }
-    #header {
-        justify-content: center;
-    }
 }
