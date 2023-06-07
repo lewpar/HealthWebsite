@@ -7,6 +7,7 @@
 
     --primary: rgb(116, 193, 65);
     --primary-highlight: rgb(131, 215, 74);
+    --secondary: rgb(95, 155, 56);
 }
 
 body {
@@ -127,7 +128,7 @@ body {
 
     padding: 10px;
 
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary-highlight);
 
     gap: 10px;
 }
@@ -201,6 +202,40 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+.healthy-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+.healthy-form-item {
+    display: flex;
+    flex-direction: column;
+}
+.healthy-form-item input{
+    border: 3px solid var(--primary-highlight);
+    border-radius: 0px;
+
+    background-color: white;
+    outline: var(--primary-highlight);
+    color: black;
+    padding: 5px;
+}
+.healthy-form-item button{
+    border: 1px solid var(--primary-highlight);
+    border-radius: 4px;
+
+    background-color: var(--primary-highlight);
+    outline: var(--primary-highlight);
+    color: white;
+    padding: 5px;
+
+    transition: border 0.25s;
+}
+.healthy-form-item button:hover{
+    border-color: var(--secondary);
 }
 
 #footer {
