@@ -216,8 +216,8 @@ body {
 #footer-content {
     opacity: 0;
     animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
