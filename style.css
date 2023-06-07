@@ -11,6 +11,9 @@
 
 body {
     height: 100vh;
+
+    transition: background-color 1s;
+    background-color: var(--primary);
 }
 
 #container {
@@ -87,6 +90,9 @@ body {
     flex-direction: row;
 
     flex-grow: 1;
+
+    color: white;
+    background-color: var(--primary-highlight);
 }
 
 #page {
