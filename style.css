@@ -24,20 +24,28 @@ body {
     display: flex;
     flex-direction: column;
 
-    min-width: 20%;
+    width: 0%;
+    min-width: 0%;
 
     gap: 20px;
 
     background-color: var(--primary);
+
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes slide-in {
     0% {
         width: 0%;
+        min-width: 0%;
     }
 
     100% {
         width: 20%;
+        min-width: 20%;
     }
 }
 
