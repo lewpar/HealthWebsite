@@ -118,6 +118,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 #logo img {
     max-height: 64px;
@@ -157,4 +158,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    #content {
+        flex-direction: column;
+    }
+    #sidebar {
+        width: 100% !important;
+    }
 }
