@@ -108,7 +108,13 @@ body {
     animation-delay: 2s;
     animation-fill-mode: forwards;
 
+    background-color: white;
+    color: black;
+
     padding: 10px;
+    margin: 10px;
+
+    border: 2px solid var(--primary);
 }
 .page-header {
     font-weight: 600;
