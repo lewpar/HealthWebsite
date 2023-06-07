@@ -8,6 +8,7 @@
     --primary: rgb(116, 193, 65);
     --primary-highlight: rgb(131, 215, 74);
     --secondary: rgb(95, 155, 56);
+    --secondary-highlight: rgb(107, 174, 63);
 }
 
 body {
@@ -126,7 +127,7 @@ body {
     background-color: var(--primary);
     color: white;
 
-    padding: 10px;
+    padding: 1rem;
 
     border: 2px solid var(--primary-highlight);
 
@@ -208,6 +209,8 @@ body {
     display: flex;
     flex-direction: column;
 
+    flex-grow: 1;
+
     gap: 10px;
 }
 .healthy-form-item {
@@ -216,12 +219,15 @@ body {
 }
 .healthy-form-item input{
     border: 3px solid var(--primary-highlight);
-    border-radius: 0px;
+    border-radius: 2px;
 
-    background-color: white;
-    outline: var(--primary-highlight);
-    color: black;
+    background-color: var(--primary-highlight);
+
+    color: white;
     padding: 5px;
+}
+.healthy-form-item input:focus {
+    outline: 1px solid var(--secondary);
 }
 .healthy-form-item button{
     border: 1px solid var(--primary-highlight);
@@ -230,12 +236,12 @@ body {
     background-color: var(--primary-highlight);
     outline: var(--primary-highlight);
     color: white;
-    padding: 5px;
+    padding: 10px;
 
     transition: border 0.25s;
 }
 .healthy-form-item button:hover{
-    border-color: var(--secondary);
+    border: 1px solid var(--secondary);
 }
 
 #footer {
