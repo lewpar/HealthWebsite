@@ -35,8 +35,8 @@ body {
     background-color: var(--primary);
 
     animation-name: slide-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 
@@ -58,8 +58,8 @@ body {
 
     opacity: 0;
     animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 .sidebar-menu-item {
@@ -104,8 +104,8 @@ body {
 
     opacity: 0;
     animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 
     margin: 10px;
@@ -173,8 +173,8 @@ body {
 
     opacity: 0;
     animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 .logo-item {
