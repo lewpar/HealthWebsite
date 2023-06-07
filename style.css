@@ -24,16 +24,11 @@ body {
     display: flex;
     flex-direction: column;
 
+    min-width: 20%;
+
     gap: 20px;
 
-    width: 0%;
-
     background-color: var(--primary);
-
-    animation-name: slide-in;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes slide-in {
@@ -91,12 +86,22 @@ body {
     flex-direction: column;
 
     flex-grow: 1;
+    flex-wrap: wrap;
 
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+
+    padding: 10px;
+}
+.page-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.page-content {
+    font-weight: 300;
 }
 
 #logo {
