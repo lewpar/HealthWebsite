@@ -112,6 +112,12 @@ body {
 
     gap: 10px;
 }
+.page-header {
+    color: white;
+
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 .page-item {
     display: flex;
     flex-direction: column;
@@ -125,13 +131,26 @@ body {
 
     gap: 10px;
 }
-.page-header {
+.page-item-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+.gallery-item {
+    padding: 4px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    max-height: 256px;
+}
+.page-item-header {
     font-weight: 600;
     font-size: 1.25rem;
 
     border-bottom: 1px solid black;
 }
-.page-content {
+.page-item-content {
     display: flex; 
     flex-direction: row; 
     align-items: start;
@@ -208,5 +227,8 @@ body {
     }
     #sidebar {
         width: 100% !important;
+    }
+    .gallery-item {
+        max-height: 128px;
     }
 }
