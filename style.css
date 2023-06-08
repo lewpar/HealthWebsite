@@ -6,6 +6,7 @@
     text-decoration: none;
 
     --primary: rgb(116, 193, 65);
+    --primary-part-opacity: rgba(116, 193, 65, 0.85);
     --primary-highlight: rgb(131, 215, 74);
     --secondary: rgb(95, 155, 56);
     --secondary-highlight: rgb(107, 174, 63);
