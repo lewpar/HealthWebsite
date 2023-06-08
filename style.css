@@ -36,10 +36,22 @@ body {
 
     background-color: var(--primary);
 
-    animation-name: slide-in;
+    animation-name: slide-out-in;
     animation-duration: 0.5s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+}
+
+@keyframes slide-out-in {
+    0%, 100% {
+        width: 20%;
+        min-width: 20%;
+    }
+
+    50% {
+        width: 0%;
+        min-width: 0%;
+    }
 }
 
 @keyframes slide-in {
