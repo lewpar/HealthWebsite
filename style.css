@@ -5,11 +5,13 @@
     font-family: "Arial";
     text-decoration: none;
 
-    --primary: rgb(116, 193, 65);
-    --primary-part-opacity: rgba(116, 193, 65, 0.85);
-    --primary-highlight: rgb(131, 215, 74);
+    --primary: rgb(255, 255, 255);
+    --primary-part-opacity: rgba(255, 255, 255, 0.85);
+    --primary-highlight: rgb(241, 241, 241);
     --secondary: rgb(95, 155, 56);
     --secondary-highlight: rgb(107, 174, 63);
+
+    color: black;
 }
 
 body {
@@ -88,15 +90,12 @@ body {
 
     transition: background-color 0.25s, color 0.25s;
 
-    color: white;
     background-color: var(--primary);
 }
 .sidebar-menu-item:hover {
-    color: white;
     background-color: var(--primary-highlight);
 }
 .sidebar-menu-item.selected {
-    color: white;
     background-color: var(--primary-highlight);
 }
 
@@ -238,7 +237,6 @@ body {
 
     background-color: var(--primary-highlight);
 
-    color: white;
     padding: 5px;
 }
 .healthy-form-item input:focus {
@@ -250,7 +248,6 @@ body {
 
     background-color: var(--primary-highlight);
     outline: var(--primary-highlight);
-    color: white;
     padding: 10px;
 
     font-size: 1rem;
