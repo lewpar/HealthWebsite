@@ -5,13 +5,13 @@
     font-family: "Arial";
     text-decoration: none;
 
-    --primary: rgb(255, 255, 255);
+    --primary: rgba(0, 0, 0, 0.5);
     --primary-part-opacity: rgba(255, 255, 255, 0.85);
-    --primary-highlight: rgb(241, 241, 241);
-    --secondary: rgb(95, 155, 56);
-    --secondary-highlight: rgb(107, 174, 63);
+    --primary-highlight: white;
+    --secondary: rgb(106, 197, 48);
+    --secondary-highlight: black;
 
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -38,6 +38,7 @@ body {
     gap: 20px;
 
     background-color: var(--primary);
+    backdrop-filter: blur(10px);
 
     animation-name: slide-out-in;
     animation-duration: 0.5s;
@@ -89,14 +90,23 @@ body {
     gap: 10px;
 
     transition: background-color 0.25s, color 0.25s;
-
-    background-color: var(--primary);
+}
+.sidebar-menu-item i {
+    transition: color 0.25s;
+}
+.sidebar-menu-item:hover i {
+    color: white;
+}
+.sidebar-menu-item.selected i {
+    color: white;
 }
 .sidebar-menu-item:hover {
-    background-color: var(--primary-highlight);
+    background-color: var(--secondary);
+    color: white;
 }
 .sidebar-menu-item.selected {
-    background-color: var(--primary-highlight);
+    background-color: var(--secondary);
+    color: white;
 }
 
 #content {
@@ -104,9 +114,6 @@ body {
     flex-direction: row;
 
     flex-grow: 1;
-
-    color: white;
-    background-color: var(--primary-highlight);
 }
 
 #page {
@@ -122,8 +129,6 @@ body {
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 
-    margin: 10px;
-
     gap: 10px;
 }
 .page-header {
@@ -138,13 +143,15 @@ body {
     flex-direction: column;
 
     background-color: var(--primary);
-    color: white;
+    color: var(--secondary-highlight);
 
     padding: 1rem;
 
     border: 2px solid var(--primary-highlight);
 
     gap: 10px;
+
+    margin: 0px 10px;
 }
 .page-item-gallery {
     display: flex;
@@ -234,6 +241,7 @@ body {
     border: 3px solid var(--primary-highlight);
     border-radius: 2px;
 
+    color: var(--secondary-highlight);
     background-color: var(--primary-highlight);
 
     padding: 5px;
@@ -250,6 +258,8 @@ body {
     padding: 10px;
 
     font-size: 1rem;
+
+    color: var(--secondary-highlight);
 
     transition: border 0.25s;
 }
@@ -268,6 +278,7 @@ body {
 
     color: white;
     background-color: var(--primary);
+    backdrop-filter: blur(10px);
 }
 #footer-content {
     opacity: 0;
