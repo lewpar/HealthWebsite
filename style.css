@@ -6,7 +6,7 @@
     text-decoration: none;
 
     --primary: rgba(0, 0, 0, 0.5);
-    --primary-part-opacity: rgba(255, 255, 255, 0.85);
+    --primary-part-opacity: rgba(0, 0, 0, 0.25);
     --primary-highlight: white;
     --secondary: rgb(99, 186, 45);
     --secondary-highlight: rgb(117, 216, 55);
@@ -52,8 +52,6 @@ body {
 
     background-color: var(--primary);
     backdrop-filter: blur(10px);
-
-    border-right: 1px solid black;
 
     animation-name: slide-out-in;
     animation-duration: 0.5s;
@@ -162,8 +160,6 @@ body {
 
     padding: 1rem;
 
-    border: 2px solid var(--primary);
-
     gap: 10px;
 
     margin: 10px;
@@ -190,7 +186,8 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
 
-    border-bottom: 1px solid var(--primary);
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
 }
 .page-item-content {
     display: flex; 
@@ -292,8 +289,6 @@ body {
 #footer {
     display: flex;
     flex-basis: 50px;
-
-    border-top: 1px solid var(--primary);
 
     justify-content: center;
     align-items: center;
