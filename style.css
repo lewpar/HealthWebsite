@@ -53,6 +53,8 @@ body {
     background-color: var(--primary);
     backdrop-filter: blur(10px);
 
+    border-right: 1px solid black;
+
     animation-name: slide-out-in;
     animation-duration: 0.5s;
     animation-delay: 0s;
