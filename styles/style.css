@@ -264,6 +264,9 @@ body {
 .healthy-form-item input:focus {
     outline: 3px solid var(--secondary);
 }
+.healthy-form-item input:focus[type="checkbox"] {
+    outline: none;
+}
 .healthy-form-item button{
     border: 0px;
     border-radius: 4px;
