@@ -17,7 +17,7 @@
 body {
     height: 100vh;
 
-    background-color: #00D99C;
+    background-color: var(--sidebar-background);
     background-image: url("../images/background.jpg");
     background-position: center;
     background-size: cover;
