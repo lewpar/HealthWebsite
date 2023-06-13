@@ -12,6 +12,8 @@
     --secondary-highlight: rgb(117, 216, 55);
 
     color: rgb(255, 255, 255);
+
+   
 }
 
 body {
@@ -368,6 +370,27 @@ body {
     background-color: white;
 
     padding: 5px;
+}
+
+.big-text {
+    font-size: 3rem;
+}
+.bigger-text {
+    font-size: 4rem;
+}
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.center-x {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flow-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
