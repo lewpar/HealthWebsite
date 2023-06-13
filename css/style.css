@@ -20,13 +20,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: repeat-y;
-
-    opacity: 1;
-
-    animation-name: transform-slide-in-x;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
 }
 
 .main {
@@ -53,12 +46,16 @@ body {
     gap: 20px;
 
     background-color: var(--sidebar-background);
+
+    z-index: 1;
 }
 .content {
     flex: 8;
 
     display: flex;
     flex-direction: column;
+
+    background-color: var(--page-background);
 }
 
 .page {
@@ -71,9 +68,15 @@ body {
     gap: 2rem;
     flex-grow: 1;
 
+    z-index: 0;
+
     color: white;
-    background-color: var(--page-background);
     padding: 40px;
+
+    animation-name: transform-slide-in-x;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 .page-item {
@@ -88,7 +91,6 @@ body {
     align-items: center;
 
     color: white;
-    background-color: var(--page-background);
     
     background-image: url("../images/trim-bottom.png");
     background-repeat: repeat-x;
