@@ -18,7 +18,7 @@ body {
     height: 100vh;
 
     background-color: var(--sidebar-background);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("../images/background.jpg");
+    background-image: linear-gradient(var(--page-background), var(--page-background)), url("../images/background.jpg");
 
     background-position: center;
     background-size: cover;
