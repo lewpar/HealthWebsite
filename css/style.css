@@ -94,11 +94,11 @@ body {
 
     color: white;
     
-    background-image: url("../images/trim-bottom.png");
+    background-image: url("../images/trim-2.png");
     background-repeat: repeat-x;
     background-position: bottom;
     background-size:contain;
-    padding-top: 65px;
+    padding-top: 45px;
     padding-bottom: 10px;
 }
 .footer-item {
