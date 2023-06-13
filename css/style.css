@@ -283,4 +283,7 @@ body {
     .sidebar-reserve {
         position: fixed;
     }
+    .sidebar-menu-item:hover {
+        background-color: unset;
+    }
 }
