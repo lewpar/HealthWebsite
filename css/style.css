@@ -9,11 +9,13 @@
     --secondary: #00FF00;
     --panel-background: rgba(0, 0, 0, 0.5);
     --page-background: rgba(0, 0, 0, 0.25);
+    --sidebar-background: #222;
 }
 
 body {
     height: 100vh;
 
+    background-color: #00D99C;
     background-image: url("../images/background.jpg");
     background-position: center;
     background-size: cover;
@@ -50,7 +52,7 @@ body {
 
     gap: 20px;
 
-    background-color: var(--panel-background);
+    background-color: var(--sidebar-background);
 }
 .content {
     flex: 8;
@@ -88,8 +90,14 @@ body {
     gap: 0.5rem;
 
     color: white;
-    background-color: var(--panel-background);
-    padding: 5px;
+    background-color: var(--page-background);
+    
+    background-image: url("../images/trim-bottom.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size:contain;
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 .logo {
