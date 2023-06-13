@@ -203,6 +203,35 @@ body {
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
 }
+.nice-button:focus {
+    outline: 3px solid var(--secondary);
+}
+
+.nice-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+.nice-form-item {
+    display: flex;
+    flex-direction: column;
+}
+.nice-form-item input {
+    color: black;
+    background-color: white;
+    
+    border: 3px solid var(--primary);
+    border-radius: 4px;
+
+    padding: 5px;
+}
+.nice-form-item input:focus {
+    outline: 3px solid var(--secondary);
+}
+.nice-form-item input[type="checkbox"] {
+    outline: 0;
+}
 
 .gallery {
     display: flex;
