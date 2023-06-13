@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120mm"
+   height="120mm"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logo-stroke.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="59.499998"
+     inkscape:cy="240.49999"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 3" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 2">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:146.644px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';text-align:start;text-anchor:start;fill:#00bffd;fill-opacity:1;stroke:#ffffff;stroke-width:2.064;stroke-dasharray:none"
+       x="-9.0132389"
+       y="113.64281"
+       id="text6565"
+       sodipodi:insensitive="true"><tspan
+         sodipodi:role="line"
+         id="tspan6563"
+         style="fill:#00bffd;fill-opacity:1;stroke:#ffffff;stroke-width:2.064;stroke-dasharray:none"
+         x="-9.0132389"
+         y="113.64281">M</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:146.644px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';text-align:start;text-anchor:start;fill:#00d700;fill-opacity:1;stroke:#ffffff;stroke-width:2.064;stroke-dasharray:none"
+       x="-9.7210274"
+       y="113.64233"
+       id="text6561"
+       sodipodi:insensitive="true"><tspan
+         sodipodi:role="line"
+         id="tspan6559"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:146.644px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';fill:#00d700;fill-opacity:1;stroke:#ffffff;stroke-width:2.064;stroke-dasharray:none"
+         x="-9.7210274"
+         y="113.64233">L</tspan></text>
+  </g>
+</svg>
