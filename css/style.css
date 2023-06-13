@@ -224,7 +224,7 @@ body {
     border: 3px solid var(--primary);
     border-radius: 4px;
 
-    padding: 5px;
+    padding: 8px;
 }
 .nice-form-item input:focus {
     outline: 3px solid var(--secondary);
