@@ -167,10 +167,10 @@ body {
     transition: background-color 0.25s;
 }
 .sidebar-menu-item.selected {
-    background-color: var(--primary);
+    background-color: var(--primary-2);
 }
 .sidebar-menu-item:hover {
-    background-color: var(--primary);
+    background-color: var(--primary-2);
 }
 
 .text-big {
