@@ -194,4 +194,12 @@ body {
     .main {
         flex-direction: column;
     }
+
+    .sidebar {
+        position: unset;
+        max-width: 100%;
+    }
+    .sidebar-reserve {
+        position: fixed;
+    }
 }
