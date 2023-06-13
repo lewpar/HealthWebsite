@@ -21,9 +21,9 @@ body {
     background-size: cover;
     background-repeat: repeat-y;
 
-    opacity: 0;
+    opacity: 1;
 
-    animation-name: opacity-fade-in;
+    animation-name: transform-slide-in-x;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -227,6 +227,12 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes transform-slide-in-x {
+    0% {
+        transform: translateX(-100%);
     }
 }
 
