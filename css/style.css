@@ -6,6 +6,7 @@
     text-decoration: none;
 
     --primary: #00D400;
+    --secondary: #00FF00;
     --panel-background: rgba(0, 0, 0, 0.5);
     --page-background: rgba(0, 0, 0, 0.25);
 }
@@ -135,12 +136,29 @@ body {
 .text-medium {
     font-size: 3rem;
 }
+.text-small {
+    font-size: 1.5rem;
+}
 .text-center {
     text-align: center;
 }
 .text-blend {
     color: grey;
     mix-blend-mode: difference;
+}
+
+.nice-button {
+    color: white;
+    background: linear-gradient(var(--secondary), var(--primary));
+
+    border-radius: 10px;
+    padding: 10px;
+    outline: 1px solid var(--primary);
+
+    transition: outline 0.25s;
+}
+.nice-button:hover {
+    outline: 1px solid var(--secondary);
 }
 
 .gallery {
