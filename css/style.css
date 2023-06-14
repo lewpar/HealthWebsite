@@ -12,6 +12,8 @@
     --panel-background: rgba(0, 0, 0, 0.5);
     --page-background: rgba(0, 0, 0, 0.25);
     --sidebar-background: #222;
+    --sidebar-secondary: #363636;
+    --sidebar-secondary-2: #4c4c4c;
 }
 
 body {
@@ -165,8 +167,8 @@ body {
 
     color: white;
 
-    background-color: var(--primary);
-    border-left: 4px solid var(--primary-2);
+    background-color: var(--sidebar-secondary);
+    border-left: 4px solid var(--sidebar-secondary-2);
 
     margin: 5px 5px;
 
