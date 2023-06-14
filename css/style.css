@@ -136,6 +136,8 @@ body {
 .sidebar-menu {
     display: flex;
     flex-direction: column;
+
+    gap: 4px;
 }
 .sidebar-menu-title {
     display: flex;
@@ -163,13 +165,20 @@ body {
 
     color: white;
 
-    transition: background-color 0.25s;
+    background-color: var(--primary);
+    border-left: 4px solid var(--primary-2);
+
+    margin: 5px 5px;
+
+    transition: border 0.25s, background-color 0.25s;
 }
 .sidebar-menu-item.selected {
-    background-color: var(--primary-2);
+    background-color: var(--secondary);
+    border-left: 4px solid var(--secondary-2);
 }
 .sidebar-menu-item:hover {
-    background-color: var(--primary-2);
+    background-color: var(--secondary);
+    border-left: 4px solid var(--secondary-2);
 }
 
 .text-big {
@@ -287,6 +296,11 @@ body {
         position: fixed;
     }
     .sidebar-menu-item:hover {
-        background-color: unset;
+        background-color: var(--primary);
+        border-left: 4px solid var(--primary-2);
+    }
+    .sidebar-menu-item.selected:hover {
+        background-color: var(--secondary);
+        border-left: 4px solid var(--secondary-2);
     }
 }
