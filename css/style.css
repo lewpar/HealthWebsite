@@ -310,12 +310,4 @@ body {
     .sidebar-reserve {
         position: fixed;
     }
-    .sidebar-menu-item:hover {
-        background-color: var(--primary);
-        border-left: 4px solid var(--primary-2);
-    }
-    .sidebar-menu-item.selected:hover {
-        background-color: var(--secondary);
-        border-left: 4px solid var(--secondary-2);
-    }
 }
