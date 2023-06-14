@@ -229,25 +229,34 @@ body {
     display: flex;
     flex-direction: column;
 
-    gap: 10px;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    outline: 4px solid #00000017;
+    border-radius: 4px;
+    margin-top: 4px;
+
+    gap: 20px;
 }
 .nice-form-item {
     display: flex;
     flex-direction: column;
 }
+.nice-form-item label a {
+    text-decoration: underline;
+    color: var(--secondary-2);
+}
 .nice-form-item input {
     color: black;
     background-color: white;
 
-    border: 3px solid var(--primary);
+    border: 3px solid rgb(187, 187, 187);
     border-radius: 4px;
 
     padding: 8px;
 }
 .nice-form-item input:focus {
-    outline: 3px solid var(--secondary);
-}
-.nice-form-item input[type="checkbox"] {
+    border: 3px solid var(--primary);
     outline: 0;
 }
 
