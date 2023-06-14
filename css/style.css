@@ -178,9 +178,13 @@ body {
     background-color: var(--secondary);
     border-left: 4px solid var(--secondary-2);
 }
-.sidebar-menu-item:hover {
+.sidebar-menu-item.selected:hover {
     background-color: var(--secondary);
     border-left: 4px solid var(--secondary-2);
+}
+.sidebar-menu-item:hover {
+    background-color: var(--sidebar-secondary-2);
+    border-left: 4px solid var(--sidebar-secondary-2);
 }
 
 .text-big {
