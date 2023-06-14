@@ -175,12 +175,12 @@ body {
     transition: border 0.25s, background-color 0.25s;
 }
 .sidebar-menu-item.selected {
-    background-color: var(--secondary);
-    border-left: 4px solid var(--secondary-2);
+    background-color: var(--primary-2);
+    border-left: 4px solid var(--primary);
 }
 .sidebar-menu-item.selected:hover {
-    background-color: var(--secondary);
-    border-left: 4px solid var(--secondary-2);
+    background-color: var(--primary);
+    border-left: 4px solid var(--primary);
 }
 .sidebar-menu-item:hover {
     background-color: var(--sidebar-secondary-2);
