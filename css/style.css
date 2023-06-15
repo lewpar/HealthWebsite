@@ -14,6 +14,9 @@
     --sidebar-background: #222;
     --sidebar-secondary: #363636;
     --sidebar-secondary-2: #4c4c4c;
+
+    --sidebar-c-1: rgb(12, 12, 12);
+    --sidebar-c-2: rgb(63, 63, 63);
 }
 
 body {
@@ -164,8 +167,8 @@ body {
 .sidebar-menu-divider {
     height: 0px;
 
-    border-top: 1px solid rgb(12, 12, 12);
-    border-bottom: 1px solid rgb(63, 63, 63);
+    border-top: 1px solid var(--sidebar-c-1);
+    border-bottom: 1px solid var(--sidebar-c-2);
 
     margin: 5px 10px;
 }
