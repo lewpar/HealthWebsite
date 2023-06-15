@@ -181,13 +181,11 @@ body {
     padding: 10px;
 
     color: white;
-
-    background-color: var(--sidebar-secondary);
-    border-left: 4px solid var(--sidebar-secondary-2);
+    border: 1px solid rgba(0, 0, 0, 0);
 
     margin: 5px 5px;
 
-    transition: border 0.25s, background-color 0.25s;
+    transition: border 0.25s, outline 0.25s, background-color 0.25s;
 }
 .sidebar-menu-item.selected {
     background-color: var(--primary-2);
@@ -198,8 +196,8 @@ body {
     border-left: 4px solid var(--primary);
 }
 .sidebar-menu-item:hover {
-    background-color: var(--sidebar-secondary-2);
-    border-left: 4px solid var(--sidebar-secondary-2);
+    background-color: var(--sidebar-secondary);
+    border: 1px solid var(--sidebar-secondary-2);
 }
 
 .text-big {
