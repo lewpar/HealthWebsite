@@ -17,7 +17,10 @@
 }
 
 body {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
 
     background-color: var(--sidebar-background);
 }
@@ -26,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
 
-    height: 100%;
+    flex-grow: 1;
 }
 
 .sidebar-reserve {
@@ -66,6 +69,8 @@ body {
     display: flex;
     flex-direction: column;
 
+    align-self: stretch;
+
     justify-content: center;
     align-items: center;
 
@@ -99,6 +104,8 @@ body {
     align-items: center;
 
     color: white;
+
+    z-index: 1;
     
     background-image: url("../images/trim-2.png");
     background-repeat: repeat-x;
