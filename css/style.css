@@ -274,6 +274,9 @@ body {
 .gallery-item {
     padding: 5px;
     background-color: var(--panel-background);
+
+    max-width: 300px;
+    max-height: 200px;
 }
 .gallery-item img {
     min-width: 100%;
