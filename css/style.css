@@ -83,7 +83,6 @@ body {
     z-index: 0;
 
     color: white;
-    padding: 40px;
 
     animation-name: transform-slide-in-x;
     animation-duration: 1s;
@@ -94,6 +93,8 @@ body {
 .page-item {
     display: flex;
     flex-direction: column;
+
+    max-width: 80%;
 }
 .page-item form {
     min-width: 400px;
