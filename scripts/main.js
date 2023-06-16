@@ -1,12 +1,13 @@
 async function setDailyTip()
 {
-    try {
+    try 
+    {
         let days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
-        const d = new Date();
-        let day = d.getDay();
-        let file = `/dailytips/${days[day - 1]}.html`
+        const now = new Date();
+        let day = now.getDay();
+        let filePath = `/dailytips/${days[day - 1]}.html`
 
-        let result = await fetch(file);
+        let result = await fetch(filePath);
         if(result.ok)
         {
             let page = document.getElementsByClassName("page")[0];
@@ -15,7 +16,8 @@ async function setDailyTip()
             page.innerHTML = tipHTML;
         }
     }
-    catch(exception) {
+    catch(exception) 
+    {
         console.log(exception);
     }
 }
