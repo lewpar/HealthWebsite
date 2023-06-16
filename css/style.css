@@ -294,6 +294,10 @@ body {
     max-height: 100%;
 }
 
+iframe.page {
+    border: 0;
+}
+
 /* KEYFRAMES */
 @keyframes opacity-fade-in {
     0% {
