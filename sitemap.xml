@@ -3,35 +3,10 @@
 	<url>
 		<loc>https://www.lewpar.github.io</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-06-15</lastmod>
-	</url>
-	<url>
-		<loc>https://www.lewpar.github.io/register.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-15</lastmod>
-	</url>
-	<url>
-		<loc>https://www.lewpar.github.io/privacy.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-15</lastmod>
-	</url>
-	<url>
-		<loc>https://www.lewpar.github.io/oldwebsite</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-13</lastmod>
-	</url>
-	<url>
-		<loc>https://www.lewpar.github.io/login.html</loc>
-		<priority>0.67</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.lewpar.github.io/gallery.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2023-06-15</lastmod>
-	</url>
-	<url>
-		<loc>https://www.lewpar.github.io/events.html</loc>
+		<loc>https://www.lewpar.github.io/about.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
@@ -41,27 +16,37 @@
 		<lastmod>2023-06-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.lewpar.github.io/about.html</loc>
+		<loc>https://www.lewpar.github.io/events.html</loc>
 		<priority>0.67</priority>
-		<lastmod>2023-06-15</lastmod>
-	</url>
-	<url>
-		<loc>https://www.lewpar.github.io/dailytips/sunday.html</loc>
-		<priority>0.33</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.lewpar.github.io/dailytips/thursday.html</loc>
-		<priority>0.33</priority>
+		<loc>https://www.lewpar.github.io/gallery.html</loc>
+		<priority>0.67</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.lewpar.github.io/dailytips/tuesday.html</loc>
-		<priority>0.33</priority>
+		<loc>https://www.lewpar.github.io/login.html</loc>
+		<priority>0.67</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.lewpar.github.io/dailytips/monday.html</loc>
+		<loc>https://www.lewpar.github.io/oldwebsite</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-13</lastmod>
+	</url>
+	<url>
+		<loc>https://www.lewpar.github.io/privacy.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.lewpar.github.io/register.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2023-06-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.lewpar.github.io/dailytips/saturday.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
@@ -71,7 +56,22 @@
 		<lastmod>2023-06-16</lastmod>
 	</url>
 	<url>
-		<loc>https://www.lewpar.github.io/dailytips/saturday.html</loc>
+		<loc>https://www.lewpar.github.io/dailytips/monday.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-06-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.lewpar.github.io/dailytips/tuesday.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-06-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.lewpar.github.io/dailytips/thursday.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2023-06-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.lewpar.github.io/dailytips/sunday.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2023-06-16</lastmod>
 	</url>
