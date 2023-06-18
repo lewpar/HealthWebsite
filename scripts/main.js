@@ -1,16 +1,20 @@
-let tipIndex = 0;
+// The day index.
+let dayIndex = 0;
 
+// Decrease the day index by 1 and re-fetch the tips page.
 function prevTip()
 {
-    tipIndex--;
+    dayIndex--;
     setDailyTip();
 }
 
+// Increase the day index by 1 and re-fetch the tips page.
 function nextTip()
 {
-    tipIndex++;
+    dayIndex++;
     setDailyTip();
 }
+
 /*
     Gets the day of the week page and injects it into the page element.
 */
@@ -26,24 +30,30 @@ async function setDailyTip()
         const now = new Date();
 
         // Get the number day of the week, sunday:0, saturday:6
-        let day = now.getDay() + tipIndex;
-        console.log(day);
+        // and add the day index (controlled by the previous and next buttons).
+        let day = now.getDay() + dayIndex;
 
+        // Check if its the last day of the week.
         if(day == days.length - 1)
         {
+            // Disable the next button so we don't try to fix a non-existent day.
             next.setAttribute("disabled", "");
         }
-        else 
+        else // It's not the last day of the week.
         {
+            // Re-enable the next button.
             next.removeAttribute("disabled");
         }
 
+        // Check if its the first day of the week.
         if(day == 0)
         {
+            // Disable the previous button so we don't try to fix a non-existent day.
             prev.setAttribute("disabled", "");
         }
-        else
+        else // It's not the first day of the week.
         {
+            // Disable the previous button so we don't try to fix a non-existent day.
             prev.removeAttribute("disabled");
         }
 
