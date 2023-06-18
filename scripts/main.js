@@ -6,7 +6,7 @@ async function setDailyTip()
         const now = new Date();
         let day = now.getDay();
 
-        let filePath = `../dailytips/${days[day]}.html`
+        let filePath = `./dailytips/${days[day]}.html`
 
         let result = await fetch(filePath);
         if(result.ok)
