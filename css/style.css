@@ -84,7 +84,7 @@ body {
 
     color: white;
 
-    animation-name: transform-slide-in-x;
+    animation-name: transform-slide-in-x-right;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
@@ -324,9 +324,14 @@ iframe.page {
     }
 }
 
-@keyframes transform-slide-in-x {
+@keyframes transform-slide-in-x-right {
     0% {
         transform: translateX(-100%);
+    }
+}
+@keyframes transform-slide-in-x-left {
+    0% {
+        transform: translateX(100%);
     }
 }
 
