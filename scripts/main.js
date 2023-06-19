@@ -4,6 +4,9 @@ let dayIndex = 0;
 // Decrease the day index by 1 and re-fetch the tips page.
 function prevTip()
 {
+    dayIndex--;
+    updateTipControls();
+
     let page = document.getElementsByClassName("page")[0];
 
     // Remove the old animations and fade out the current page.
@@ -13,7 +16,6 @@ function prevTip()
 
     // After a 500ms delay, slide the new page in.
     setTimeout(function() {
-        dayIndex--;
         setDailyTip();
         page.classList.remove("opacity-fade-out");
         page.classList.add("slide-in-right");
@@ -23,6 +25,9 @@ function prevTip()
 // Increase the day index by 1 and re-fetch the tips page.
 function nextTip()
 {
+    dayIndex++;
+    updateTipControls();
+
     // Remove the old animations and fade out the current page.
     let page = document.getElementsByClassName("page")[0];
     page.classList.remove("slide-in-left");
@@ -31,11 +36,48 @@ function nextTip()
 
     // After a 500ms delay, slide the new page in.
     setTimeout(function() {
-        dayIndex++;
         setDailyTip();
         page.classList.remove("opacity-fade-out");
         page.classList.add("slide-in-left");
     }, 500);
+}
+
+function updateTipControls()
+{
+    let next = document.getElementById("tip-next");
+    let prev = document.getElementById("tip-prev");
+    
+    // The days of the week collection.
+    let days = [ "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+    const now = new Date();
+
+    // Get the number day of the week, sunday:0, saturday:6
+    // and add the day index (controlled by the previous and next buttons).
+    let day = now.getDay() + dayIndex;
+
+    // Check if its the last day of the week.
+    if(day >= days.length - 1)
+    {
+        // Disable the next button so we don't try to fix a non-existent day.
+        next.setAttribute("disabled", "");
+    }
+    else // It's not the last day of the week.
+    {
+        // Re-enable the next button.
+        next.removeAttribute("disabled");
+    }
+
+    // Check if its the first day of the week.
+    if(day == 0)
+    {
+        // Disable the previous button so we don't try to fix a non-existent day.
+        prev.setAttribute("disabled", "");
+    }
+    else // It's not the first day of the week.
+    {
+        // Disable the previous button so we don't try to fix a non-existent day.
+        prev.removeAttribute("disabled");
+    }
 }
 
 /*
@@ -57,7 +99,7 @@ async function setDailyTip()
         let day = now.getDay() + dayIndex;
 
         // Check if its the last day of the week.
-        if(day == days.length - 1)
+        if(day >= days.length - 1)
         {
             // Disable the next button so we don't try to fix a non-existent day.
             next.setAttribute("disabled", "");
