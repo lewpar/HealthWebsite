@@ -16,7 +16,7 @@ function prevTip()
         dayIndex--;
         setDailyTip();
         page.classList.remove("opacity-fade-out");
-        page.classList.add("slide-in-left");
+        page.classList.add("slide-in-right");
     }, 500);
 }
 
@@ -34,7 +34,7 @@ function nextTip()
         dayIndex++;
         setDailyTip();
         page.classList.remove("opacity-fade-out");
-        page.classList.add("slide-in-right");
+        page.classList.add("slide-in-left");
     }, 500);
 }
 
