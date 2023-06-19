@@ -102,6 +102,7 @@ body {
     flex-direction: column;
 
     max-width: 80%;
+    min-width: 80%;
 }
 .footer {
     display: flex;
@@ -260,8 +261,8 @@ body {
     outline: 4px solid #00000017;
     border-radius: 4px;
 
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     gap: 20px;
 }
@@ -277,10 +278,6 @@ body {
 
     gap: 1rem;
     padding: 1rem;
-    border: 1px solid #dedede;
-    border-radius: 4px;
-
-    background-color: rgb(249, 249, 249);
 }
 .nice-form-item {
     display: flex;
