@@ -269,21 +269,18 @@ body {
     display: flex;
     flex-direction: row;
 
-    flex-wrap: wrap;
-
     gap: 1rem;
-    padding: 1rem;
-
-    border: 1px solid #dedede;
-    border-radius: 4px;
-
-    background-color: rgb(249, 249, 249);
 }
 .nice-form-item-group {
     display: flex;
     flex-direction: column;
 
     gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+
+    background-color: rgb(249, 249, 249);
 }
 .nice-form-item {
     display: flex;
@@ -295,7 +292,8 @@ body {
     text-decoration: underline;
     color: var(--secondary-2);
 }
-.nice-form-item input {
+
+.clean-form-item {
     color: black;
     background-color: white;
 
@@ -304,22 +302,36 @@ body {
 
     padding: 8px;
 }
-.nice-form-item input:focus {
+.clean-form-item:focus {
     border: 3px solid var(--primary);
     outline: 0;
 }
-.nice-form-item select {
+
+.dirty-form-item {
     color: black;
     background-color: white;
 
-    border: 3px solid rgb(187, 187, 187);
+    border: 3px solid red;
     border-radius: 4px;
 
     padding: 8px;
 }
-.nice-form-item select:focus {
+.dirty-form-item:focus {
     border: 3px solid var(--primary);
     outline: 0;
+}
+.dirty-form-item::after {
+    content: "test";
+    width: 100%;
+}
+.form-error {
+    display: none;
+    color: red;
+}
+.form-success {
+    display: none;
+    color: rgb(9, 214, 9);
+    align-self: center;
 }
 
 .gallery {

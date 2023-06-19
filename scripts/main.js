@@ -131,3 +131,162 @@ async function setDailyTip()
         console.log(exception);
     }
 }
+
+function toggleInvalidField(field, state, message = "")
+{
+    if(state)
+    {
+        field.classList.add("dirty-form-item");
+        let error = field.parentElement.lastElementChild;
+        error.style.display = "flex";
+        error.innerHTML = message;
+    }
+    else
+    {
+        field.classList.remove("dirty-form-item");
+        let error = field.parentElement.lastElementChild;
+        error.style.display = "none";
+    }
+}
+
+function resetRegister(resetValue, resetValidation)
+{
+    let success = document.getElementById("form-success");
+    success.style.display = "none";
+
+    let formItems = document.getElementsByClassName("clean-form-item");
+    for(var i = 0; i < formItems.length; i++)
+    {
+        let formType = formItems[i].tagName;
+
+        switch(formType)
+        {
+            case "INPUT":
+                if(resetValue)
+                {
+                    formItems[i].value = "";
+                    formItems[i].checked = false;
+                }
+                if(resetValidation)
+                {
+                    toggleInvalidField(formItems[i], false);
+                }
+                break;
+
+            case "SELECT":
+                if(resetValidation)
+                {
+                    toggleInvalidField(formItems[i], false);
+                }
+                break;
+        }
+    }
+}
+
+function register()
+{
+    hasError = false;
+
+    resetRegister(false, true);
+
+    let fieldUsername = document.getElementById("form-username");
+    let fieldPassword = document.getElementById("form-password");
+    let fieldRepeatPassword = document.getElementById("form-repeat-password");
+
+    let fieldFirstName = document.getElementById("form-first-name");
+    let fieldLastName = document.getElementById("form-last-name");
+    let fieldGender = document.getElementById("form-gender");
+
+    let fieldEmail = document.getElementById("form-email");
+    let fieldPhone = document.getElementById("form-phone");
+
+    let fieldStreet = document.getElementById("form-street");
+    let fieldSuburb = document.getElementById("form-suburb");
+    let fieldState = document.getElementById("form-state");
+    let fieldPostCode = document.getElementById("form-postcode");
+
+    let fieldPrivacy = document.getElementById("form-privacy");
+    
+    if(fieldUsername.value === "")
+    {
+        toggleInvalidField(fieldUsername, true, "You must enter a username.");
+        hasError = true;
+    }
+
+    if(fieldPassword.value === "")
+    {
+        toggleInvalidField(fieldPassword, true, "You must enter a password.");
+        hasError = true;
+    }
+    if(fieldRepeatPassword.value === "")
+    {
+        toggleInvalidField(fieldRepeatPassword, true, "You must repeat your password.");
+        hasError = true;
+    }
+
+    if(fieldRepeatPassword.value !== fieldPassword.value)
+    {
+        toggleInvalidField(fieldRepeatPassword, true, "Your passwords do not match.");
+        hasError = true;
+    }
+
+    if(fieldFirstName.value === "")
+    {
+        toggleInvalidField(fieldFirstName, true, "You must enter your first name.");
+        hasError = true;
+    }
+    if(fieldLastName.value === "")
+    {
+        toggleInvalidField(fieldLastName, true, "You must enter your last name.");
+    }
+    if(fieldGender.value === "select")
+    {
+        toggleInvalidField(fieldGender, true, "You must select a gender.");
+        hasError = true;
+    }
+
+    if(fieldEmail.value === "")
+    {
+        toggleInvalidField(fieldEmail, true, "You must enter an email address.");
+        hasError = true;
+    }
+    if(fieldPhone.value === "")
+    {
+        toggleInvalidField(fieldPhone, true, "You must enter a phone number.");
+        hasError = true;
+    }
+
+    if(fieldStreet.value === "")
+    {
+        toggleInvalidField(fieldStreet, true, "You must enter a street address.");
+        hasError = true;
+    }
+    if(fieldSuburb.value === "")
+    {
+        toggleInvalidField(fieldSuburb, true, "You must enter a suburb.");
+        hasError = true;
+    }
+    if(fieldState.value === "")
+    {
+        toggleInvalidField(fieldState, true, "You must enter a state.");
+        hasError = true;
+    }
+    if(fieldPostCode.value === "")
+    {
+        toggleInvalidField(fieldPostCode, true, "Your must enter a postcode.");
+        hasError = true;
+    }
+
+    if(!fieldPrivacy.checked)
+    {
+        toggleInvalidField(fieldPrivacy, true, "Your must agree to the privacy policy.");
+        hasError = true;
+    }
+
+    if(!hasError)
+    {
+        let success = document.getElementById("form-success");
+        success.style.display = "block";
+        success.innerHTML = "Account Created!";
+    }
+}
