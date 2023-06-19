@@ -83,11 +83,6 @@ body {
     z-index: 0;
 
     color: white;
-
-    animation-name: transform-slide-in-x-right;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
 }
 
 .page-controls {
@@ -312,6 +307,13 @@ body {
 
 iframe.page {
     border: 0;
+}
+
+.slide-in-right {
+    animation-name: transform-slide-in-x-right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 /* KEYFRAMES */
