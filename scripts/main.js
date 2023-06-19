@@ -4,7 +4,10 @@ let dayIndex = 0;
 // Decrease the day index by 1 and re-fetch the tips page.
 function prevTip()
 {
+    // Change the page index to the previous.
     dayIndex--;
+
+    // Update the prev/next controls.
     updateTipControls();
 
     let page = document.getElementsByClassName("page")[0];
@@ -25,7 +28,10 @@ function prevTip()
 // Increase the day index by 1 and re-fetch the tips page.
 function nextTip()
 {
+    // Change the page index to the next.
     dayIndex++;
+
+    // Update the prev/next controls.
     updateTipControls();
 
     // Remove the old animations and fade out the current page.
@@ -46,7 +52,7 @@ function updateTipControls()
 {
     let next = document.getElementById("tip-next");
     let prev = document.getElementById("tip-prev");
-    
+
     // The days of the week collection.
     let days = [ "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
     const now = new Date();
@@ -98,29 +104,7 @@ async function setDailyTip()
         // and add the day index (controlled by the previous and next buttons).
         let day = now.getDay() + dayIndex;
 
-        // Check if its the last day of the week.
-        if(day >= days.length - 1)
-        {
-            // Disable the next button so we don't try to fix a non-existent day.
-            next.setAttribute("disabled", "");
-        }
-        else // It's not the last day of the week.
-        {
-            // Re-enable the next button.
-            next.removeAttribute("disabled");
-        }
-
-        // Check if its the first day of the week.
-        if(day == 0)
-        {
-            // Disable the previous button so we don't try to fix a non-existent day.
-            prev.setAttribute("disabled", "");
-        }
-        else // It's not the first day of the week.
-        {
-            // Disable the previous button so we don't try to fix a non-existent day.
-            prev.removeAttribute("disabled");
-        }
+        updateTipControls();
 
         // Get the name of the day using the index location.
         let filePath = `./dailytips/${days[day]}.html`
