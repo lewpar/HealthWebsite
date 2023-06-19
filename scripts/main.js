@@ -250,6 +250,11 @@ function register()
         toggleInvalidField(fieldEmail, true, "You must enter an email address.");
         hasError = true;
     }
+    if(!new RegExp("[0-9a-zA-Z].*@[0-9a-zA-Z].*\\.[0-9a-zA-Z].*").test(fieldEmail.value))
+    {
+        toggleInvalidField(fieldEmail, true, "You must enter a valid email address.");
+        hasError = true;
+    }
     if(fieldPhone.value === "")
     {
         toggleInvalidField(fieldPhone, true, "You must enter a phone number.");
