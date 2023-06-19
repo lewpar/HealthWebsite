@@ -4,15 +4,38 @@ let dayIndex = 0;
 // Decrease the day index by 1 and re-fetch the tips page.
 function prevTip()
 {
-    dayIndex--;
-    setDailyTip();
+    let page = document.getElementsByClassName("page")[0];
+
+    // Remove the old animations and fade out the current page.
+    page.classList.remove("slide-in-left");
+    page.classList.remove("slide-in-right");
+    page.classList.add("opacity-fade-out");
+
+    // After a 500ms delay, slide the new page in.
+    setTimeout(function() {
+        dayIndex--;
+        setDailyTip();
+        page.classList.remove("opacity-fade-out");
+        page.classList.add("slide-in-left");
+    }, 500);
 }
 
 // Increase the day index by 1 and re-fetch the tips page.
 function nextTip()
 {
-    dayIndex++;
-    setDailyTip();
+    // Remove the old animations and fade out the current page.
+    let page = document.getElementsByClassName("page")[0];
+    page.classList.remove("slide-in-left");
+    page.classList.remove("slide-in-right");
+    page.classList.add("opacity-fade-out");
+
+    // After a 500ms delay, slide the new page in.
+    setTimeout(function() {
+        dayIndex++;
+        setDailyTip();
+        page.classList.remove("opacity-fade-out");
+        page.classList.add("slide-in-right");
+    }, 500);
 }
 
 /*

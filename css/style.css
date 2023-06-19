@@ -66,6 +66,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: repeat-y;
+
+    overflow-x: hidden;
 }
 
 .page {
@@ -315,6 +317,18 @@ iframe.page {
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
+.slide-in-left {
+    animation-name: transform-slide-in-x-left;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.opacity-fade-out {
+    animation-name: opacity-fade-out;
+    animation-duration: 500ms;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
 
 /* KEYFRAMES */
 @keyframes opacity-fade-in {
@@ -323,6 +337,14 @@ iframe.page {
     }
     100% {
         opacity: 1;
+    }
+}
+@keyframes opacity-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
