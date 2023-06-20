@@ -273,7 +273,7 @@ function register()
         toggleInvalidField(fieldEmail, true, "You must enter a valid email address.");
         hasError = true;
     }
-    if(fieldPhone.value === "")
+    if(!new RegExp("^[0-9]+$").test(fieldPhone.value))
     {
         toggleInvalidField(fieldPhone, true, "You must enter a phone number.");
         hasError = true;
@@ -294,7 +294,7 @@ function register()
         toggleInvalidField(fieldState, true, "You must enter a state.");
         hasError = true;
     }
-    if(fieldPostCode.value === "")
+    if(!new RegExp("^[0-9]+$").test(fieldPostCode.value))
     {
         toggleInvalidField(fieldPostCode, true, "Your must enter a postcode.");
         hasError = true;
