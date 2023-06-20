@@ -317,10 +317,6 @@ body {
     border: 3px solid var(--primary);
     outline: 0;
 }
-.dirty-form-item::after {
-    content: "test";
-    width: 100%;
-}
 .form-error {
     display: none;
     color: red;
